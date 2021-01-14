@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Questions.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,15 +13,21 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
 
   List<Icon> scoreKeeper = [
-    Icon(
-      Icons.check,
-      color: Colors.green,
-    ),
-    Icon(
-      Icons.close,
-      color: Colors.red,
-    )
+
   ];
+
+  int i =0;
+
+  List<Questions> questionBank = [
+    Questions(q:"abc", a:true),
+    Questions(q:"jfieow", a:true),
+    Questions(q:"fghrhre", a:true),
+    Questions(q:"bfewfe", a:false),
+    Questions(q:"fffabdcvc", a:false),
+    Questions(q:"hgtngt", a:false),
+
+  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +39,7 @@ class _MyAppState extends State<MyApp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Question ; ",
+                  "Question ; " + questionBank[i].questionText,
                   style: TextStyle(fontSize: 30),
                 ),
                 SizedBox(height: 350),
@@ -40,8 +47,10 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.green,
                   onPressed: () {
                     print("clicked yes ");
+                    result( true , questionBank[i].answerText );
                     setState(() {
-                      scoreKeeper.add( Icon(Icons.check, color: Colors.green,) );
+                      i++;
+
                     });
 
                   },
@@ -55,8 +64,11 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.red,
                   onPressed: () {
                     print("clicked no");
+                    result( false , questionBank[i].answerText );
 
-
+                    setState(() {
+                      i++;
+                    });
 
                   },
                   child: Text(
@@ -75,4 +87,17 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
+
+  void result(userAnswer, answerText){
+    if(userAnswer == questionBank[i].answerText) {
+      // correct
+      scoreKeeper.add( Icon(Icons.check) );
+    }else{
+      //incorrect
+      scoreKeeper.add( Icon(Icons.close) );
+    }
+  }
+
+
+
 }
