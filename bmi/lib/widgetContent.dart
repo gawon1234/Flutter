@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class widgetContent extends StatelessWidget {
   final Icon icon;
-  final Text txt;
+  final String txt;
 
   widgetContent(this.icon, this.txt) {}
 
@@ -10,7 +11,11 @@ class widgetContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [this.icon, SizedBox(height: 15), this.txt],
+      children: [
+        this.icon,
+        SizedBox(height: 15),
+        Text(this.txt , style: kLabelTextStyle),
+      ],
     );
   }
 }

@@ -12,6 +12,7 @@ class BMICal extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
           primaryColor: Colors.black,
           textTheme: TextTheme(body1: TextStyle(color: Colors.yellow))),
+
       home: InputPage(),
     );
   }
