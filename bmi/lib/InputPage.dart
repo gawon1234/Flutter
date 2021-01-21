@@ -4,6 +4,8 @@ import 'ReusableCard.dart';
 import 'widgetContent.dart';
 import 'constants.dart';
 import 'results_page.dart';
+import 'BottomButton.dart';
+import 'package:bmi/Calculator_brain.dart';
 
 enum Gender { male, female }
 
@@ -141,15 +143,19 @@ class _InputPageState extends State<InputPage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                RoundIconButton( FontAwesomeIcons.plus , (){ setState(() {
-                                  if(selectedWeight < 65)
-                                    selectedWeight++;
-                                }); } ),
-                                SizedBox(width: 10,),
-                                RoundIconButton( FontAwesomeIcons.minus , (){ setState(() {
-                                  if(selectedWeight > 55)
-                                  selectedWeight--;
-                                }); } ),
+                                RoundIconButton(FontAwesomeIcons.plus, () {
+                                  setState(() {
+                                    if (selectedWeight < 65) selectedWeight++;
+                                  });
+                                }),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                RoundIconButton(FontAwesomeIcons.minus, () {
+                                  setState(() {
+                                    if (selectedWeight > 55) selectedWeight--;
+                                  });
+                                }),
                               ],
                             )
                           ],
@@ -162,42 +168,31 @@ class _InputPageState extends State<InputPage> {
                         Column(
                           children: [
                             Text('AGE', style: kLabelTextStyle),
-                            Text(selectedAge.toString() , style: kNumberStyle),
-RoundIconButton(FontAwesomeIcons.plus, (){
-  setState(() {
-    selectedAge++;
-  });
-}),
-                            RoundIconButton(FontAwesomeIcons.minus, (){
+                            Text(selectedAge.toString(), style: kNumberStyle),
+                            RoundIconButton(FontAwesomeIcons.plus, () {
+                              setState(() {
+                                selectedAge++;
+                              });
+                            }),
+                            RoundIconButton(FontAwesomeIcons.minus, () {
                               setState(() {
                                 selectedAge--;
                               });
                             })
-
-
                           ],
-                        )
-
-
-
-                        ,
+                        ),
                         () {}),
                   ),
                 ],
               ),
             ),
-            GestureDetector(
-              child: Container(
-                child: Text("result"),
-                color: kBottomContainerColor,
-                margin: EdgeInsets.all(0),
-                width: double.infinity,
-                height: kBottomContainerHeight,
-              ),
-              onTap: (){
-                Navigator.pushNamed(context, '/result_page');
-              },
-            )
+            BottomButton( "Result" , (){
+              CalculatorBrain cb = CalculatorBrain(this.selectedAge,  this.selectedWeight);
+
+
+
+              Navigator.pushNamed(context, '/result_page' );
+            } )
           ],
         ));
   }
@@ -205,35 +200,30 @@ RoundIconButton(FontAwesomeIcons.plus, (){
   void gestureDetector() {}
 }
 
-class RoundIconButton extends StatelessWidget {
 
+class RoundIconButton extends StatelessWidget {
   final IconData child;
   final Function selected_action;
 
-  RoundIconButton(@required this.child , this.selected_action ){
-  }
-
+  RoundIconButton(@required this.child, this.selected_action) {}
 
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-        shape: CircleBorder() ,
+        shape: CircleBorder(),
         fillColor: Colors.white,
         elevation: 30.0,
         focusElevation: 4.0,
-        child: Icon( this.child, color: Colors.black, ),
+        child: Icon(
+          this.child,
+          color: Colors.black,
+        ),
         constraints: BoxConstraints.tightFor(
           width: 56.0,
           height: 56.0,
         ),
-
         onPressed: () {
           this.selected_action();
-
         });
   }
-
-
-
-
 }
