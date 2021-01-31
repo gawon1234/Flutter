@@ -15,6 +15,13 @@ class WeatherModel {
     return decodedData;
   }
 
+  Future getCityWeather(city) async{
+    Networking networking = Networking('$urlPrefix?q=$city&appid=51dd1c4c5c013a06bc008b60436d6aff');
+    var decodedData = await networking.getData();
+
+    return decodedData;
+  }
+
 
   String getWeatherIcon(int condition) {
     if (condition < 300) {

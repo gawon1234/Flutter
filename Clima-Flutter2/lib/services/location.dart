@@ -15,9 +15,7 @@ class Location{
       print("error - no geo");
     }
 
-
   }
-
 
 }
 
