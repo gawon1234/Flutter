@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c88e4f4e-294e-4828-b2bd-1a8c4d50c29c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bitcoin-ticker-flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bitcoin-ticker-flutter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/coin_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/coin_data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/price_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/price_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1o0Hat7YTi4uUVWg6OcLPgtXDta" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c88e4f4e-294e-4828-b2bd-1a8c4d50c29c" name="Default Changelist" comment="" />
+      <created>1612416654475</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612416654475</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1592" height="390" key="GridCell.Tab.0.bottom" timestamp="1613238016094">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state width="1592" height="390" key="GridCell.Tab.0.bottom/0.23.2560.1360@0.23.2560.1360" timestamp="1613238016094" />
+    <state width="1592" height="390" key="GridCell.Tab.0.center" timestamp="1613238016094">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state width="1592" height="390" key="GridCell.Tab.0.center/0.23.2560.1360@0.23.2560.1360" timestamp="1613238016094" />
+    <state width="1592" height="390" key="GridCell.Tab.0.left" timestamp="1613238016094">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state width="1592" height="390" key="GridCell.Tab.0.left/0.23.2560.1360@0.23.2560.1360" timestamp="1613238016094" />
+    <state width="1592" height="390" key="GridCell.Tab.0.right" timestamp="1613238016094">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state width="1592" height="390" key="GridCell.Tab.0.right/0.23.2560.1360@0.23.2560.1360" timestamp="1613238016094" />
   </component>
 </project>
